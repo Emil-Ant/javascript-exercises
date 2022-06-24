@@ -6,14 +6,14 @@ const subtract = function(a, b) {
 	return a - b;
 };
 
-const sum = function(a) {
-	let val = 0; 
-  for(let i = 0; i < arguments.length; i++) { 
-    val += arguments[i]; 
-  }
+const sum = function(array) {
+  val = 0; 
+  array.forEach(item => {
+    val += item;
+  }); 
+  return val; 
+}
 
-  return val;
-};
 
 const multiply = function() {
 
